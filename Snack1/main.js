@@ -78,6 +78,6 @@ console.log(autoBenzina);
 const autoDiesel = auto.filter(auto => auto.alimentazione === "Diesel" );
 console.log(autoDiesel);
 
-const autoDiverse = auto.filter(auto => auto.alimentazione !== "Diesel" && "Benzina" );
+const autoDiverse = auto.filter(auto => auto.alimentazione !== "Diesel" && auto.alimentazione !== "Benzina" );
 console.log(autoDiverse);
 
