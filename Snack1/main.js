@@ -70,7 +70,14 @@ const auto = [
 
 /* console.log(auto); */
 
-//Dividi le auto in tre array separati
+//Dividi le auto in tre array separati e stampali in console
 
-const autoBenzina = auto.filter(controlloBenzina);
+const autoBenzina = auto.filter(auto => auto.alimentazione === "Benzina" );
+console.log(autoBenzina);
+
+const autoDiesel = auto.filter(auto => auto.alimentazione === "Diesel" );
+console.log(autoDiesel);
+
+const autoDiverse = auto.filter(auto => auto.alimentazione !== "Diesel" && "Benzina" );
+console.log(autoDiverse);
 
